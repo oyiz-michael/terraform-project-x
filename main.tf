@@ -43,3 +43,4 @@ resource "aws_instance" "tf-test" {
     cpu_credits = "unlimited"
   }
 }
+# terraform
