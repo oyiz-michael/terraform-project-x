@@ -21,3 +21,17 @@ output "public_ip" {
 output "private_ip" {
   value       = aws_instance.tf-test.private_ip
 }
+
+output "aws_db_instance" {
+  value = aws_db_instance.tf-test
+  sensitive = true
+}
+
+output "rds_port" {
+  value = "aws_rds_cluster_instance.default"
+  sensitive = true
+}
+
+output "aws_vpc" {
+  value = aws_vpc.my_vpc
+}

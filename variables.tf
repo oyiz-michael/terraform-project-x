@@ -10,3 +10,9 @@ variable "instance_type" {
   description = "terraform test"
 }
 
+variable "db_password" {
+  type = string
+  default = "asdf1234!"
+  description = "terraform test"
+  
+}
